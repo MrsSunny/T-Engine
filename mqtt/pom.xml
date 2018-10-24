@@ -7,9 +7,23 @@
         <groupId>com.soaer</groupId>
         <version>1.0.0.1</version>
     </parent>
+    <packaging>jar</packaging>
+    <properties>
+        <mqttv3.version>1.2.0</mqttv3.version>
+    </properties>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>mqtt</artifactId>
-
-
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+            <version>${mqttv3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
